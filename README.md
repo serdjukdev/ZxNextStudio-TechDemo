@@ -15,9 +15,13 @@ The code itself was written quickly to demonstrate the exported data working in 
 
 ![Portal link screenshot](docs/screenshots/portal.png)
 
+## Quick start
+
+A pre-built `build/game.nex` is included in the repo, so you can run the demo right away without building anything: download **[CSpect](https://mdf200.itch.io/cspect)** and open `build/game.nex` with it.
+
 ## Requirements
 
-To build and run this project you need:
+To build the project yourself (instead of just running the included `.nex`) you need:
 
 - **[sjasmplus](https://github.com/z00m128/sjasmplus)**, the Z80 assembler used to build the ROM/NEX file.
 - **[CSpect](https://mdf200.itch.io/cspect)**, a ZX Spectrum Next emulator, used to run the built `.nex` file.
@@ -42,7 +46,8 @@ The built `.nex` file ends up in `build/game.nex`.
 
 ## Credits
 
-All graphics and map data were authored and exported with **[ZxNext Studio](https://github.com/serdjukdev/ZxNextGraphicsConverter)**.
+- All graphics and map data were authored and exported with **[ZxNext Studio](https://github.com/serdjukdev/ZxNextGraphicsConverter)**.
+- Tile and sprite graphics are from the **[Simple Dungeon Crawler 16x16 Pixel Pack](https://o-lobster.itch.io/simple-dungeon-crawler-16x16-pixel-pack)** by o-lobster.
 
 ## License
 
