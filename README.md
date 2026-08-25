@@ -43,3 +43,7 @@ The built `.nex` file ends up in `build/game.nex`.
 ## Credits
 
 All graphics and map data were authored and exported with **[ZxNext Studio](https://github.com/serdjukdev/ZxNextGraphicsConverter)**.
+
+## License
+
+[MIT](LICENSE)
