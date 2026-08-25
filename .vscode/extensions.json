@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "maziac.asm-code-lens",
+        "thenestruo.z80-asm-meter",
+        "maziac.z80-instruction-set",
+        "mborik.z80-macroasm"
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "*.asm": "z80-macroasm",
+        "*.a80": "z80-macroasm",
+        "*.inc": "z80-macroasm"
+    },
+    // language-specific settings to change native behaviour of VSCode
+    "[z80-macroasm]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": true,
+        "editor.rulers": [8, 16],
+        "editor.colorDecorators": false,
+        "editor.formatOnType": false,
+        "editor.quickSuggestions": {
+            "other": false,
+            "comments": false,
+            "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.tabCompletion": "off",
+        "editor.acceptSuggestionOnTab": "off",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.inlineSuggest.enabled": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.parameterHints.enabled": false
+    },
+}

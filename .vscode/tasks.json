@@ -1,0 +1,50 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "increment-version",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "${workspaceFolder}/.vscode/version_gen.ps1"
+            ]
+        },
+        {
+            "label": "sjasmplus",
+            "type": "shell",
+            "command": "C:\\ZX\\projects next\\TilemapByMetatiles\\sjasmplus\\sjasmplus.exe",
+            "dependsOn": ["increment-version"],
+            "args": [
+                "code/launcher.asm",
+                "--nofakes",
+                "--zxnext=cspect",
+                "--syntax=b",
+                "--color=on"
+            ]
+        },
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "C:\\ZX\\emul\\CSpect3_3_1_0\\CSpect.exe",
+            "dependsOn": ["sjasmplus"],
+            "args": [
+                "-zxnext",
+                "-nextrom",
+                "-16bit",
+                "-map=C:\\ZX\\projects next\\Test\\test\\labels.map",
+                "-s28",
+                "-esc",
+                "-w4",
+                "-brk",
+                "build/game.nex"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

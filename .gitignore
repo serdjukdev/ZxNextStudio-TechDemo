@@ -1,0 +1,4 @@
+build/*.nex
+code/version.bin
+labels.map
+version.txt
