@@ -2,3 +2,4 @@
 ; obj_<name>: equ <type index> -- a map's objects row writes this index as an object record's `type` byte (0xFF = no type assigned)
 obj_character: equ 0
 obj_portal: equ 1
+obj_test: equ 2

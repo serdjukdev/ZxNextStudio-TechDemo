@@ -5,7 +5,7 @@ level_001_objects_count: equ 3
 
 level_001_objects:
 ; [0] hero_0_0 at (288,96), type character
-    db 0,32,1,96,0,0,255,0
+    db 0,32,1,96,0,0,255,51
 ; [1] portal at (48,176), type portal, links to [2] portal
     db 6,48,0,176,0,1,2,0
 ; [2] portal at (256,80), type portal, links to [1] portal
